@@ -1,0 +1,17 @@
+.bootbox-close-button {
+  font-size: 3rem;
+  border: none;
+  color: $color-grey-medium;
+  background-color: $color-white;
+  float: right;
+  margin-top: -1rem;
+}
+
+.bootbox-body {
+  font-size: $font-size-normal;
+}
+
+.modal-content {
+  padding: 1rem;
+  border-radius: $border-radius;
+}

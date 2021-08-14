@@ -1,0 +1,140 @@
+//// PROFILE PAGE ---------------
+
+.profile {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin-top: 8rem;
+  position: relative;
+  // display: grid;
+  // grid-template-rows: 20rem max-content;
+  // grid-template-columns: repeat(6, 1fr);
+
+  &__sidebar {
+    // grid-row: 1/-1;
+    // grid-column: 1/2;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-left: 2rem solid $color-Primary;
+    border-bottom: 0.6rem solid $color-Primary;
+    box-shadow: $shadow-box;
+    opacity: 0.3rem;
+  }
+  &__main {
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    // grid-row: 1/-1;
+    // grid-column: 2/-1;
+    background-color: $color-white;
+    box-shadow: $shadow-box;
+  }
+
+  // IMAGE-----------
+
+  &__background-img {
+    width: 100%;
+  }
+  &__background {
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow: $shadow-box;
+    z-index: 0;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 15rem;
+    margin-top: -8rem;
+    border-radius: 50%;
+    border: 0.8rem solid $color-white;
+    box-shadow: $shadow-box;
+    z-index: 1;
+  }
+
+  // PROFILE NAME
+  &__name {
+    width: 100%;
+    font-size: 2rem;
+    color: $color-white;
+    text-shadow: $shadow-box-small;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+
+  // PROFILE DETAILS
+  &__details {
+    width: 100%;
+  }
+
+  &__num-posts,
+  &__num-likes,
+  &__num-friends,
+  &__common-friends {
+    width: 100%;
+    font-size: 1.7rem;
+    color: $color-white;
+    text-shadow: $shadow-box-small;
+    font-weight: 600;
+  }
+
+  &__num-posts,
+  &__num-likes,
+  &__num-friends,
+  &__common-friends {
+    padding: 0.8rem 0;
+    border-top: 0.05rem solid rgba($color-grey-light, 0.3);
+  }
+
+  &__common-friends {
+    padding: 0.8rem 0 1.4rem 0;
+    border-bottom: 0.05rem solid rgba($color-grey-light, 0.3);
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__remove-friend,
+  &__add-friend,
+  &__respond-request,
+  &__send-request,
+  &__post-msg {
+    display: inline-block;
+    width: 75%;
+    padding: 1rem 0.5rem;
+    box-shadow: $shadow-icon;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $color-white;
+    text-shadow: $shadow-icon;
+    background-color: $color-Primary;
+    border-radius: $border-radius;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  &__remove-friend,
+  &__add-friend,
+  &__respond-request,
+  &__post-msg {
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+}
+
+.post-area {
+  width: 80%;
+  background-color: $color-white;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box;
+  padding: 2rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+.modal {
+  &__container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__text {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-grey-dark;
+    background-color: $color-grey-light;
+    padding: 1.2rem 1rem;
+    border-radius: $border-radius;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    color: $color-grey-dark;
+    margin: 1rem 0;
+  }
+
+  &__text-area {
+    display: block;
+    @include textarea(100%, 4rem);
+
+    &:focus {
+      outline: none;
+      border: 0.1rem solid $color-grey-medium;
+    }
+    &::placeholder {
+      @include placeholderStyle();
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

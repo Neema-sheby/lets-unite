@@ -1,0 +1,20 @@
+.account__closed {
+  width: 50%;
+  margin: 40vh auto;
+  text-align: center;
+  background-color: $color-white;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box;
+  padding: 5rem;
+  color: $color-grey-dark;
+
+  h4 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+}

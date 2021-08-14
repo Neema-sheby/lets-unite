@@ -1,0 +1,22 @@
+.close-acc {
+  width: 60%;
+  background-color: $color-grey-light;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+
+  &__text {
+    font-size: $font-size-normal;
+    font-weight: 400;
+    color: $color-grey-dark;
+    margin-top: 1rem;
+  }
+
+  &__form {
+    margin-top: 1rem;
+  }
+}

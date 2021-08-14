@@ -1,0 +1,75 @@
+///////////////////////////SUCCESS MESSAGE STYLE
+.success-comments {
+  width: 100%;
+  font-size: $font-size-normal;
+  font-weight: 400;
+  color: $color-black;
+}
+
+.action-confirmed,
+.select_msg {
+  font-weight: 600;
+  color: $color-grey-dark;
+  align-self: center;
+}
+
+.action-confirmed {
+  width: 20%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.noMorePostsText,
+.noMoreDropdownText,
+.alert-message {
+  width: 100%;
+  font-size: $font-size-normal;
+  font-weight: 700;
+  color: $color-grey-dark;
+  text-align: center;
+  background-color: $color-grey-light;
+  border-radius: $border-radius;
+  padding: 0.3rem 1rem;
+  margin: 2rem 1rem;
+}
+
+.see-result {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: $color-white;
+  background-color: $color-Primary;
+  border-bottom: 0.5rem solid $color-heading-shadow;
+  border-radius: 0 0 $border-radius $border-radius;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.3rem rgb(0 0 0 / 30%);
+  padding: 0.5rem 1rem;
+  margin-top: -2.3rem;
+}
+
+.successful {
+  width: 100%;
+  font-size: $font-size-normal;
+  font-weight: 700;
+  color: $color-Primary;
+}
+
+.declined {
+  width: 100%;
+  font-size: $font-size-normal;
+  font-weight: 700;
+  color: $color-decline;
+}
+
+.comment-sent {
+  font-size: $font-size-normal;
+  font-weight: 400;
+  color: $color-accept;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  transform: translate(0, -50%);
+}

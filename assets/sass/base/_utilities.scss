@@ -1,0 +1,81 @@
+///////////////////////////////////TEXT-ALIGN
+.text-align {
+  text-align: center;
+}
+
+///////////////////////////////////MARGIN
+.margin-top-xx-small {
+  margin-top: -1rem;
+}
+
+.margin-btm-x-small {
+  margin-bottom: 1rem;
+}
+
+.margin-top-small {
+  margin-top: 2rem;
+}
+
+.margin-btm-small {
+  margin-bottom: 2rem;
+}
+
+.margin-left-small {
+  margin-left: 2rem;
+}
+.margin-right-small {
+  margin-right: 2rem;
+}
+
+.margin-top-x-large {
+  margin-top: 8rem;
+}
+.margin-top-x-small {
+  margin-top: -8rem;
+}
+
+///////////////////////////////////PADDING
+.padding-top-small {
+  padding-top: 2rem;
+}
+
+//////////////////////////////////FLEX
+.flex-row-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+//////////////////////////////////BOOTSTRAP
+.mr-3 {
+  margin-right: $spacer !important;
+}
+
+.mr-2 {
+  margin-right: $spacer !important;
+}
+
+.mb-1 {
+  margin-right: $spacer * 0.5 !important;
+}
+
+/////////////////////////////BORDER LINE
+.border-line {
+  padding: 0 1.5rem;
+  border-bottom: 0.1rem solid $color-grey-medium;
+}
+
+//////////////////////////////WIDTH
+.width-100 {
+  width: 100% !important;
+}
+
+.width-50 {
+  width: 50% !important;
+}
+
+//////////////////////////////////SCROLL
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

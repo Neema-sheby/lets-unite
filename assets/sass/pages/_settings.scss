@@ -1,0 +1,79 @@
+.settings {
+  width: 58%;
+  background-color: $color-grey-light;
+  padding: 3rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  box-shadow: $shadow-box-small;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //////////////////////////////////////////// IMAGE UPLOAD
+  &__img-box {
+    width: 48%;
+    border-radius: $border-radius;
+    background-color: $color-background-green;
+    box-shadow: $shadow-box;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  &__img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    border: 0.8rem solid $color-white;
+    box-shadow: $shadow-box;
+    margin-right: 1rem;
+  }
+
+  &__img-upload {
+    width: 50%;
+    margin-left: 2rem;
+  }
+
+  &__form,
+  &__close-account {
+    width: 48%;
+    border-radius: $border-radius;
+    background-color: $color-background-green;
+    box-shadow: $shadow-box;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  &__close-account {
+    margin: 1rem auto;
+  }
+
+  //////////////////////////////////////CHANGE PROFILE DETAILS
+
+  &__label {
+    font-size: $font-size-normal;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: $font-size-normal;
+    color: grey;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    margin: 1rem 0 1.5rem 0;
+  }
+}

@@ -1,0 +1,73 @@
+// COLOR VARIABLES
+$color-Primary: #badc58;
+$color-Primary-dark: #a3cb38;
+
+$color-secondary: rgba(75, 207, 250, 0.4);
+
+$color-navy: #1e272e;
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light: #ecf0f1;
+$color-grey-medium: #95a5a6;
+$color-grey-dark: #2f3640;
+
+$color-background-body: #dcdde1;
+$color-background-gradient: linear-gradient(
+  to left,
+  $color-white 70%,
+  rgba($color-navy, 0.8) 70%
+);
+$color-background-green: rgba($color-Primary, 0.2);
+
+$color-background-1: $color-grey-medium;
+$color-background-2: $color-grey-light;
+$color-background-3: #f1c40f;
+
+$color-heading: $color-Primary;
+$color-heading-shadow: $color-Primary-dark;
+
+$color-heading-formbox: rgba(46, 204, 113, 0.7);
+$color-background-formbox: rgba(220, 221, 225, 0.5);
+
+$color-success-box: #2ecc71;
+$color-error-box: #ff3f34;
+$color-accept: #2ecc71;
+$color-decline: #ff3f34;
+$color-alert: #ff3f34;
+$color-warning: #ffc107;
+
+$color-underline: rgba(0, 0, 0, 0.5);
+$color-border: rgba(0, 0, 0, 0.5);
+$border-underline: 0.1rem solid rgba($color-grey-medium, 0.3);
+//SHADOW VARIABLES
+
+$shadow-x-small: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.3);
+$shadow-small: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+$shadow-large: 0rem 2rem 9rem -2rem rgba(0, 0, 0, 0.8);
+
+$text-heading-shadow: 0.5rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+$shadow-box-small: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+$shadow-box: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+
+$shadow-icon: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+$shadow-btn: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+$drop-shadow: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+//FONT SIZES
+$font-size-normal: 1.6rem;
+$color-arrow-font: #fff;
+
+//MARGINS
+$margin-top-small: 1.5rem;
+$margin-btm-small: 0.8rem;
+$margin-top-of-page: 8rem;
+
+//border radius
+$border-radius: 0.8rem;
+
+//bootstrap
+$spacer: 2rem;
+
+//modal
+$modal-content-bg: $color-grey-dark;

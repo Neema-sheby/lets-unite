@@ -1,0 +1,80 @@
+.requests {
+  width: 80%;
+  background-color: $color-white;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding: 4rem;
+  box-shadow: $shadow-box;
+  border-radius: 0 0 $border-radius $border-radius;
+
+  &__list {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__wrap {
+    width: 25%;
+    filter: $drop-shadow;
+    margin: 3rem;
+  }
+
+  &__details {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-image: $color-background-gradient;
+    opacity: 0.8;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img-box {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  &__action {
+    width: 60%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+  }
+
+  &__userfrom-img {
+    width: 10rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 0.2rem solid $color-white;
+    box-shadow: $shadow-box;
+  }
+
+  &__userfrom-name:link,
+  &__userfrom-name:visited {
+    text-decoration: none;
+    color: $color-grey-dark;
+    font-size: $font-size-normal;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    margin-top: 0.8rem;
+  }
+
+  &__accept {
+    margin-bottom: 1rem;
+  }
+  &__decline {
+    font-size: 1.4rem;
+    background-color: $color-decline;
+  }
+}

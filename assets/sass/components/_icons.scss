@@ -1,0 +1,73 @@
+.icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  list-style: none;
+  align-self: center;
+  margin-top: 0.2rem;
+  background-color: $color-grey-light;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  box-shadow: $shadow-box;
+  transition: transform 0.2s;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 2rem auto auto auto;
+    width: 0%;
+    height: 0.2rem;
+    background-color: $color-underline;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.icon-x-small {
+  width: 2rem;
+  height: 2rem;
+  fill: $color-white;
+  filter: drop-shadow($shadow-icon);
+  pointer-events: none;
+}
+
+.icon-small {
+  width: 3rem;
+  height: 3rem;
+  fill: $color-white;
+  filter: drop-shadow($shadow-icon);
+  margin: 0;
+  text-align: center;
+}
+
+.icon-animate-black {
+  width: 4rem;
+  height: 4rem;
+  fill: $color-black;
+  transform: rotate(-30deg);
+}
+
+.icon-cross {
+  width: 4rem;
+  height: 4rem;
+  fill: $color-black;
+}
+
+.icon-search {
+  width: 80%;
+  height: 80%;
+  fill: $color-white;
+  filter: drop-shadow($shadow-icon);
+  margin-top: 0.4rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

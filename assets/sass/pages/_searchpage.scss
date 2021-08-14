@@ -1,0 +1,126 @@
+//////////////////////////DISPLAY SEARCH RESULTS
+
+.results {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 10rem;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: minmax(20rem, 30rem) 3fr;
+  grid-gap: 5rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: $margin-top-of-page;
+
+  &__display {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box;
+    padding: 2rem;
+  }
+
+  ////////////////////////////////NUM OF RESULTS
+  &__num-users {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-grey-dark;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: $color-grey-light;
+    border-radius: $border-radius;
+    padding: 1rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-grey-dark;
+    margin: 2rem 0;
+  }
+
+  ////////////////////////////////RESULTS BOX
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  //////////////////////////////////////////////
+
+  &__link {
+    width: 100%;
+    background-color: $color-grey-light;
+    border-radius: $border-radius;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      box-shadow: $shadow-box;
+      background-color: rgba($color-Primary, 0.5);
+    }
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    color: $color-grey-dark;
+  }
+
+  &__img-box {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: $shadow-box;
+  }
+  &__img {
+    width: 7rem;
+    border-radius: 50%;
+    border: 0.3rem solid $color-white;
+  }
+  &__details {
+    margin-left: 1.5rem;
+  }
+  &__name {
+    font-size: $font-size-normal;
+    font-weight: 700;
+  }
+  &__username {
+    font-style: italic;
+    font-size: $font-size-normal;
+    font-weight: 400;
+  }
+  &__mutualFriends {
+    font-size: $font-size-normal;
+    font-weight: 700;
+    color: $color-grey-medium;
+  }
+  ///////////////////////////////////////BUTTONS
+
+  &__form {
+    width: 20%;
+    justify-self: flex-end;
+    align-self: center;
+    margin-left: -20rem;
+
+    input {
+      width: 100%;
+    }
+    // position: absolute;
+    // text-align: end;
+  }
+}

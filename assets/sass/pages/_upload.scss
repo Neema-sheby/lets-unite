@@ -1,0 +1,22 @@
+.upload {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  border: 0.2rem solid $color-white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box;
+  text-align: center;
+}
+
+#image {
+  display: block;
+  width: 100%;
+}
+.preview {
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid red;
+}

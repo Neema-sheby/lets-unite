@@ -1,0 +1,47 @@
+.heading-1 {
+  font-family: Dancing Script, sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: $color-white;
+  text-shadow: $text-heading-shadow;
+}
+.heading-1-lato {
+  font-family: lato, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $color-grey-dark;
+  text-transform: uppercase;
+}
+
+.heading-2,
+.heading-2-border {
+  background-color: $color-grey-light;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $color-grey-dark;
+  padding: 0.8rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box-small;
+}
+
+.heading-2-border {
+  width: 100%;
+  font-style: italic;
+  border: 0.2rem solid $color-Primary;
+}
+
+.heading-3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: $color-grey-dark;
+}
+
+.heading-4 {
+  font-size: $font-size-normal;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.hidden {
+  opacity: 0;
+}

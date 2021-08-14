@@ -1,0 +1,14 @@
+.textarea-80 {
+  @include textarea(80%, 4rem);
+
+  &:focus {
+    outline: none;
+    border: 0.1rem solid $color-grey-medium;
+  }
+  &::placeholder {
+    @include placeholderStyle();
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

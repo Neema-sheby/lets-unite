@@ -1,0 +1,221 @@
+//////////////////////////////////// MESSAGE LAYOUT
+.message {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 10rem;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: minmax(20rem, 30rem) 3fr;
+  grid-gap: 5rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: $margin-top-of-page;
+
+  ///////////////////////////////MESSAGES NEW FRIEND
+  &__label {
+    font-size: $font-size-normal;
+    margin-right: 1rem;
+  }
+
+  //////////////////////////////////// MESSAGES
+  &__box {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box;
+    padding: 2rem;
+  }
+  &__all-chats {
+    height: 65%;
+    max-height: 50rem;
+    min-height: 10rem;
+    overflow: scroll;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box-small;
+    background-color: $color-grey-light;
+    margin: 2rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__results {
+    width: 50%;
+    background-color: $color-grey-light;
+    border-radius: $border-radius;
+    font-size: $font-size-normal;
+    color: $color-grey-dark;
+    font-weight: 400;
+    padding: 0.6rem 2rem;
+    margin: 2rem 0;
+    box-shadow: $shadow-box-small;
+  }
+
+  &__post-chat {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //////////////////////////////////// ALL CONVERSATION
+  &__conversation-box {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/-1;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    color: $color-grey-dark;
+  }
+
+  &__conversation,
+  &__conversation-dropDown {
+    width: 100%;
+    background-color: $color-grey-light;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box-small;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+  }
+  &__conversation {
+    margin-top: 2rem;
+  }
+  &__conversation-dropDown {
+    margin: 1rem;
+  }
+
+  &__conversation:hover {
+    box-shadow: $shadow-box;
+    background-color: $color-background-green;
+  }
+
+  &__conversation-dropDown:hover {
+    box-shadow: $shadow-box;
+    background-color: rgba($color-Primary, 0.5);
+  }
+
+  &__user-details {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__user-img,
+  &__user-img-dropdown {
+    border-radius: 50%;
+    box-shadow: $shadow-box;
+    border: 0.3rem solid $color-white;
+  }
+  &__user-img {
+    width: 10rem;
+  }
+
+  &__user-img-dropdown {
+    width: 7rem;
+  }
+
+  &__user-name {
+    font-weight: 700;
+  }
+
+  &__time {
+    display: inline-block;
+    font-size: $font-size-normal;
+    font-weight: 700;
+    color: $color-grey-medium;
+  }
+
+  &__text {
+    font-style: italic;
+    font-size: $font-size-normal;
+    font-weight: 400;
+  }
+
+  /////////////// LIVE FRIEND SEARCH FOR SENDING MSG
+  &__result-box {
+    margin-top: 2rem;
+  }
+  &__display-result {
+    width: 100%;
+    background-color: $color-grey-light;
+    border-radius: $border-radius;
+    font-size: $font-size-normal;
+    color: $color-grey-dark;
+    font-weight: 400;
+    padding: 2rem 25rem;
+    box-shadow: $shadow-box-small;
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-background-green;
+      box-shadow: $shadow-box;
+    }
+  }
+
+  &__livesearch-profile-pic-box {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: $shadow-box;
+  }
+  &__livesearch-profile-img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.1rem solid $color-white;
+  }
+  &__livesearch-text {
+    text-align: center;
+
+    b {
+      background-color: $color-Primary;
+      padding: 0.3rem 1rem;
+      border-radius: $border-radius;
+    }
+  }
+  &__livesearch-username {
+    font-style: italic;
+    margin-top: 0.3rem;
+  }
+  &__livesearch-mutual-friend {
+    font-style: italic;
+    color: $color-grey-medium;
+  }
+
+  ////////////////////// MESSAGES IN PROFILE PAGE
+  &__tab {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+//////////////////////////////////// CHAT BOX
+#blue {
+  background-color: $color-white;
+}
+
+#green {
+  right: 0;
+  border: 0.2rem solid $color-white;
+  background-color: $color-background-green;
+  align-self: flex-end;
+}

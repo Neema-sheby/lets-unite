@@ -1,0 +1,66 @@
+.success-msg,
+.err-msg {
+  margin: 0 auto;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  color: $color-white;
+  border-radius: 2rem;
+}
+.success-msg {
+  background-color: $color-success-box;
+}
+.err-msg {
+  background-color: $color-error-box;
+}
+
+.error-hidden,
+.success-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.icon-error {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0.2rem;
+  fill: red;
+}
+
+.c-box {
+  &,
+  &__left,
+  &__right {
+    display: block;
+    width: 30%;
+    background: $color-error-box;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: start;
+    color: #fff;
+    padding: 0.5rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index:9999;
+  }
+
+  &__left {
+    top: -90%;
+    left: 90%;
+  }
+  &__right {
+    top: -90%;
+    right: 20%;
+  }
+
+  &__arrow--left {
+    @include box-arrow(left, $color-error-box);
+  }
+  &__arrow--right {
+    @include box-arrow(right, $color-error-box);
+  }
+}

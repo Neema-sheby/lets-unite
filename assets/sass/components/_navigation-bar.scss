@@ -1,0 +1,175 @@
+.navi {
+  width: 100%;
+  height: 8rem;
+  padding: 1.2rem;
+  background-color: $color-heading;
+  border-bottom: 0.5rem solid $color-heading-shadow;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  box-shadow: $shadow-box;
+  align-items: center;
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.95;
+
+  &__title-box {
+    width: 30%;
+    text-align: center;
+    transform: rotate(-2deg);
+    transition: all 0.2s;
+
+    &:hover {
+      transform: rotate(2deg);
+    }
+  }
+
+  &__title:link,
+  &__title:visited {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__search-box {
+    width: 20%;
+    height: 100%;
+    margin-right: auto;
+    position: relative;
+    transition: width 0.5s ease-out;
+
+    &:hover,
+    &:active {
+      width: 30%;
+    }
+  }
+
+  input.navi__search-input {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-decoration: none;
+    border: none;
+    font-size: $font-size-normal;
+    color: inherit;
+    border-radius: $border-radius;
+    padding: 1rem 2rem;
+    box-shadow: $shadow-box;
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-x-small;
+    }
+    &::placeholder {
+      @include placeholderStyle();
+    }
+  }
+
+  &__search-icon-box {
+    width: 7rem;
+    height: 4.6rem;
+    position: absolute;
+    background-color: $color-grey-light;
+    top: 50%;
+    right: 0;
+    margin: auto 0 auto 0;
+    transform: translate(0, -50%);
+    border-radius: 0.8rem;
+    box-shadow: $shadow-box-small;
+    cursor: pointer;
+    text-align: center;
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  &__icon-box {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 3rem;
+    text-align: center;
+  }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    height: 100%;
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__username-box {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1rem;
+    &::after {
+      content: "";
+      display: block;
+      margin: 0.1rem auto auto auto;
+      width: 0%;
+      height: 0.25rem;
+      background-color: $color-underline;
+      transition: width 0.2s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &__username {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    text-shadow: $shadow-box-small;
+  }
+
+  ////////////////// DROPDOWN WINDOW OF MESSAGES ICON
+  &__dropdown-window {
+    width: 25%;
+    transform: scale(0.8);
+    position: fixed;
+    top: 6rem;
+    right: 2rem;
+    background-color: $color-white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    border-radius: 0 0 $border-radius $border-radius;
+    z-index: 5000;
+  }
+
+  /////////////////// DISPLAY NOTIFICATIONS IN ICONS
+
+  &__mail,
+  &__bell,
+  &__users {
+    position: relative;
+  }
+
+  &__unreadMsgs,
+  &__unreadNotifications,
+  &__numFriendRequests {
+    position: absolute;
+    top: -1.2rem;
+    left: 2.5rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-alert;
+    border-radius: 50%;
+    border: 0.3rem solid $color-grey-light;
+  }
+}

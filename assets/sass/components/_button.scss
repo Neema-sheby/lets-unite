@@ -1,0 +1,269 @@
+.btn {
+  border: none;
+  width: 35%;
+  background-color: $color-white;
+  font-size: $font-size-normal;
+  font-weight: 500;
+  color: $color-grey-dark;
+  border-radius: 2rem;
+  padding: 1.2rem 1.8rem;
+  text-align: center;
+  box-shadow: $shadow-small;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.btn-link {
+  width: 100%;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: $font-size-normal;
+    font-weight: 300;
+    color: $color-white;
+  }
+  b {
+    transition: font-size 0.5s;
+  }
+
+  &:hover b:hover {
+    font-size: 1.7rem;
+  }
+}
+
+.btn-text {
+  display: inline-block;
+  text-decoration: none;
+  height: 3rem;
+  border: none;
+  font-family: inherit;
+  font-size: $font-size-normal;
+  background-color: transparent;
+  color: $color-Primary-dark;
+  font-weight: 600;
+  transition: 0.2s all;
+
+  &:hover {
+    border-bottom: 2px solid $color-Primary;
+    transform: translateY(-0.2rem);
+  }
+}
+
+/////////////////////////////////////ADD IMAGE TO POST
+
+.btn-file {
+  width: 15rem;
+  height: 4rem;
+  position: relative;
+  text-align: center;
+  margin-top: 0.8rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow-box-small;
+
+  &::before {
+    content: "Choose File";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 4rem;
+    visibility: visible;
+    background-color: $color-Primary;
+
+    padding: 0.8rem 3.5rem;
+    font-size: $font-size-normal;
+    font-weight: 600;
+    color: $color-white;
+    text-shadow: $shadow-box-small;
+    border-radius: $border-radius;
+    box-shadow: $shadow-box-small;
+    //border: 0.1rem solid $color-grey-light;
+    transition: all 0.2s;
+  }
+
+  &:hover::before {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.btn-hide {
+  display: none;
+}
+
+///////////////////////////////////// DISPLAY TITLE MESSAGE
+
+.btn-post-title {
+}
+
+///////////////////////////////////////////DELETE BUTTON
+.delete-btn {
+  display: block;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  padding-bottom: 0.8rem;
+  z-index: 10;
+  text-align: center;
+  transition: all 0.4s;
+
+  &:hover {
+    background-image: linear-gradient(
+      to top right,
+      $color-error-box 60%,
+      $color-white
+    );
+    box-shadow: $shadow-box;
+  }
+
+  &:hover::after {
+    content: "delete!";
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    left: -0.5rem;
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-error-box;
+    text-align: center;
+  }
+}
+/////////////////////////////////////////GREEN BTN LINKS
+
+.btn__submit-green-link-40:link,
+.btn__submit-green-link-40:visited {
+  @include button(40%, 3rem);
+  background-color: $color-Primary;
+  padding: 0.2rem 2rem;
+  text-decoration: none;
+}
+
+.btn__submit-green-link-15:link,
+.btn__submit-green-link-15:visited {
+  @include button(15%, 3rem);
+  background-color: $color-Primary;
+  padding: 0.2rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn__submit-green-link-80:link,
+.btn__submit-green-link-80:visited {
+  @include button(80%, 3rem);
+  background-color: $color-Primary;
+  padding: 0.2rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn__submit-green-link-100:link,
+.btn__submit-green-link-100:visited {
+  @include button(100%, 3rem);
+  background-color: $color-Primary;
+  border-radius: $border-radius 0 0 $border-radius;
+  padding: 0.2rem 1.5rem;
+  text-decoration: none;
+  margin: 0 1rem 1rem 1rem;
+}
+
+/////////////////////////////////////////YELLOW BTN LINKS
+
+.btn__submit-red-link:link,
+.btn__submit-red-link:visited {
+  @include button(45%, 3rem);
+  background-color: $color-alert;
+  padding: 0.2rem 1.5rem;
+  text-decoration: none;
+}
+
+/////////////////////////////////////////RED BTN LINKS
+
+.btn__submit-yellow-link-20-lg:link,
+.btn__submit-yellow-link-20-lg:visited {
+  @include button(100%, 100%);
+  background-color: $color-warning;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+}
+
+/////////////////////////////////////////GREEN SUBMIT BUTTONS
+
+.btn__accept {
+  @include button(60%, 100%);
+  background-color: $color-Primary;
+  font-size: 1.4rem;
+  color: $color-navy;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.btn__decline {
+  @include button(60%, 100%);
+  background-color: $color-Primary;
+  font-size: 1.4rem;
+  color: $color-navy;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  background-color: $color-decline;
+}
+
+.btn__submit-green-x-large {
+  @include button(45%, 3rem);
+  background-color: $color-Primary;
+  padding: 0.2rem 1.5rem;
+}
+
+.btn__submit-green-large {
+  @include button(25%, 4rem);
+  background-color: $color-Primary;
+}
+
+.btn__submit-green-medium {
+  @include button(18%, 100%);
+  background-color: $color-Primary;
+  padding: 0.8rem 2rem;
+}
+
+.btn__submit-green-small {
+  @include button(6%, 100%);
+  background-color: $color-Primary;
+}
+
+///////////////////////////////////////////RED ALERT BUTTONS
+
+.btn__submit-alert-medium {
+  @include button(18%, 100%);
+  background-color: $color-alert;
+  padding: 0.8rem 2rem;
+}
+
+.btn__submit-alert-x-large {
+  @include button(35%, 100%);
+  background-color: $color-alert;
+  padding: 0.8rem 2rem;
+}
+
+///////////////////////////////////////YELLOW WARNING BUTTONS
+
+.btn__submit-warning-medium {
+  @include button(20%, 100%);
+  background-color: $color-warning;
+  padding: 0.8rem 2rem;
+}
+
+///////////////////////////////////////////HIDDEN -SHOW
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+}
