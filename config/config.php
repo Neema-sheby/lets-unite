@@ -6,9 +6,12 @@ session_start();
 $timezone = date_default_timezone_set("Europe/London");
 
 
-$con = mysqli_connect("localhost","root","", "social network database");
+$con = mysqli_connect("localhost","u253840030_neemasheby","hIMalaYA6795", "u253840030_letsuniteDB");
 
 if(mysqli_connect_errno()){
   echo "Failed to connect :".mysqli_connect_errno();
+}else{
+  echo"connected";
 }
+
 ?>
