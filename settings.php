@@ -78,7 +78,7 @@ include("includes/form_handler/setting_handler.php");
             </div>
         </div>
 
-        <!-- ------------CHANGE PASSWORD---------- -->
+        <!-- ------------CLOSE ACCOUNT---------- -->
         <div class='settings__close-account text-align'>
             <h2 class='heading-3'>Close Account</h2>
             <div class='border-line margin-btm-x-small'></div>
