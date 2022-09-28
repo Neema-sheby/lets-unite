@@ -3,7 +3,7 @@
 ## Table of Content
 * [Objective](#Objective)
 * [Design and Implementation](#Design-and-Implementation)
-* [Log in details](#Log-in-details)
+* [Login details](#Log-in-details)
 
 ## Objective:  
 Design and develop a social media website where people can send/receive messages, get notifications, post messages/images/video, like posts, send/receive friend requests, and also, search for friends, add profile picture/ background image. This project was completed as part of a course: Build a Social Network from Scratch: JavaScript, PHP and MySQL.
@@ -17,6 +17,6 @@ Design and develop a social media website where people can send/receive messages
 *	MySQL is used as the backend database and connectivity to the database is established using MySQLi.
 *	Resizing of profile pictures and background images before uploading is done via JavaScript image cropper - cropper.js.
 
-## Log-in-details:
+## Login details:
 Email Address : helen@gmail.com
 Password : 123456
