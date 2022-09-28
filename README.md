@@ -1,10 +1,11 @@
 # Academic project 2 - Lets Unite
+
 ## Table of Content
 * [Objective](#Objective)
 * [Design and Implementation](#Design-and-Implementation)
 
 ## Objective:  
-Design and develop a social media website where people can send/receive messages, get notifications, post messages/images/video, like posts, send/receive friend requests, and also, search for friends, add profile picture/ background image. This project was completed as part of a course: Build a Social Network from Scratch: JavaScript PHP + MySQL.![image](https://user-images.githubusercontent.com/73499706/192772933-777a775d-29f4-4a08-a90a-8e95bf3e55cb.png)
+Design and develop a social media website where people can send/receive messages, get notifications, post messages/images/video, like posts, send/receive friend requests, and also, search for friends, add profile picture/ background image. This project was completed as part of a course: Build a Social Network from Scratch: JavaScript PHP + MySQL.
 
 
 ## Design and Implementation:
