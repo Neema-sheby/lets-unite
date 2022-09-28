@@ -17,6 +17,6 @@ Design and develop a social media website where people can send/receive messages
 *	MySQL is used as the backend database and connectivity to the database is established using MySQLi.
 *	Resizing of profile pictures and background images before uploading is done via JavaScript image cropper - cropper.js.
 
-##Log-in-details:
+## Log-in-details:
 Email Address : helen@gmail.com
 Password : 123456
