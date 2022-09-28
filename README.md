@@ -5,7 +5,7 @@
 * [Design and Implementation](#Design-and-Implementation)
 
 ## Objective:  
-Design and develop a social media website where people can send/receive messages, get notifications, post messages/images/video, like posts, send/receive friend requests, and also, search for friends, add profile picture/ background image. This project was completed as part of a course: Build a Social Network from Scratch: JavaScript PHP + MySQL.
+Design and develop a social media website where people can send/receive messages, get notifications, post messages/images/video, like posts, send/receive friend requests, and also, search for friends, add profile picture/ background image. This project was completed as part of a course: Build a Social Network from Scratch: JavaScript, PHP and MySQL.
 
 
 ## Design and Implementation:
